@@ -13,10 +13,11 @@ export const DivRecommendedImage = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
+  width: 220px;
+  height: 200px;
 `;
 export const DivRecoImage = styled.img`
-  width: 200px;
-  height: 200px;
+  max-width: 100%;
 `;
 export const DivRecoPrice = styled.p`
   font-weight: 600;
@@ -24,6 +25,7 @@ export const DivRecoPrice = styled.p`
   line-height: 22px;
   color: #1c1c1c;
   margin-left: 1rem;
+  margin-top: 2rem;
 `;
 export const DivRecoDesc = styled.p`
   font-weight: 400;
@@ -32,5 +34,5 @@ export const DivRecoDesc = styled.p`
   letter-spacing: -0.2px;
   color: #8b96a5;
   margin-left: 1rem;
-  margin-top: 0.3rem;
+  margin-top: 0.6rem;
 `;

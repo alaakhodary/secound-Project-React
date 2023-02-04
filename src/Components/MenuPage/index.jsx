@@ -6,6 +6,8 @@ import orders from "../../asset/love.png";
 import carts from "../../asset/cart.png";
 import { DivAllMenu, DivCarts, DivChat, DivOrder, DivPerson } from "./style";
 
+// import ToggleButton from "../../Components/ToggleButton";
+
 const MenuPage = () => {
   return (
     <DivAllMenu>
@@ -25,6 +27,7 @@ const MenuPage = () => {
         <img src={carts} alt="carts" />
         <p>My cart</p>
       </DivCarts>
+      {/* <ToggleButton /> */}
     </DivAllMenu>
   );
 };

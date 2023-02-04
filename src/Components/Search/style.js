@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DivAllSerarch = styled.div`
-  margin-left: 9rem;
+  margin-left: 5rem;
 `;
 
 export const InputSearch = styled.input`

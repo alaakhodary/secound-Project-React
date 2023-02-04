@@ -1,4 +1,4 @@
-import React from "react";
+import React /* useState */ from "react";
 
 import imgHeadPhone from "../../asset/banner.png";
 import UserImg from "../../asset/User.png";
@@ -80,9 +80,17 @@ import ExtraServices from "../../Components/ExtraServices";
 import Region from "../../Components/Region";
 import Subscribe from "../../Components/Subscribe";
 import LastFooter from "../../Components/LastFooter";
+// import { lightTheme } from "../../global/theme.js";
+// context
+/* import { themeContext } from "../../context/themeContext";
+import { ThemeProvider } from "styled-components"; */
 
 const Home = () => {
+  /*  const [theme, setTheme] = useState(lightTheme); */
+
   return (
+    /*  <ThemeProvider theme={theme}>
+      <themeContext.Provider value={[theme, setTheme]}> */
     <div>
       <Header />
       <Navbar />
@@ -522,6 +530,8 @@ const Home = () => {
       ></Subscribe>
       <LastFooter />
     </div>
+    //  </themeContext.Provider>
+    // </ThemeProvider>
   );
 };
 
