@@ -7,7 +7,7 @@ export const DivallFooter = styled.div`
   height: 74px;
   left: 0px;
   bottom: 0px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.footer};
   justify-content: space-around;
   align-items: center;
   gap: 55rem;

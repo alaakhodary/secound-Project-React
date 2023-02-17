@@ -5,17 +5,18 @@ export const DivProduct = styled.div`
   height: 129px;
   padding: 20px;
   position: relative;
-  border: 1px solid #00000024;
+  border: 1px solid ${(props) => props.theme.pallet.border.b1};
   border-left: none;
+  background: ${(props) => props.theme.pallet.main};
 `;
 export const Pproduct = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const Pprice = styled.p`
-  color: #8b96a5;
+  color: ${(props) => props.theme.pallet.secondary};
   font-weight: 400;
   font-size: 13px;
   width: 50px;

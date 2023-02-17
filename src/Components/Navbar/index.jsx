@@ -1,14 +1,21 @@
 import React from "react";
 
 import navs from "../../asset/nav.png";
-import { DivAll, DivNav, DivSelect, LItem, SecletItem } from "./style";
+import {
+  DivAll,
+  DivNav,
+  DivSelect,
+  ImgNavbar,
+  LItem,
+  SecletItem,
+} from "./style";
 
 const Navbar = () => {
   return (
     <DivAll>
       <DivNav>
         <LItem>
-          <img src={navs} alt="" style={{ marginRight: "0.5rem" }} />
+          <ImgNavbar src={navs} alt="" />
           All category
         </LItem>
         <LItem>Hot offers</LItem>

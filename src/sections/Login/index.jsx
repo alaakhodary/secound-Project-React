@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-
 import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
+
+import Footer from "../../Components/Footer";
+import ToggleButton from "../../Components/ToggleButton";
 
 import google from "../../asset/google.png";
 import face from "../../asset/facebook.png";
@@ -30,10 +33,6 @@ import {
   RigesterNow,
 } from "./style";
 
-import { useNavigate } from "react-router-dom";
-
-import Footer from "../../Components/Footer";
-
 const Login = () => {
   const navigate = useNavigate();
   const goToRigester = () => {
@@ -42,6 +41,9 @@ const Login = () => {
 
   return (
     <>
+      <div style={{ margin: "2rem" }}>
+        <ToggleButton />
+      </div>
       <DivBox>
         <Heading>Sign in</Heading>
         <form>

@@ -67,7 +67,7 @@ export const FlexDivCart = styled.div`
 export const DivCoupon = styled.div`
   width: 421px;
   height: 110px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   border: 1px solid #e3e8ee;
   border-radius: 6px;
   margin-top: 1.5rem;

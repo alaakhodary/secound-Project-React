@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const DivExtra = styled.div`
   background: #ffffff;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   border-radius: 6px;
   width: 280px;
-  height: 200px;
   margin-top: 1.4rem;
+  border: 1px solid ${(props) => props.theme.pallet.secondary};
 `;
 export const DivImageSer = styled.div`
   width: 278px;
@@ -24,6 +24,8 @@ export const DivImageSer = styled.div`
     position: absolute;
     background-color: black;
     opacity: 0.69;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
   }
 `;
 export const DivImageSericon = styled.div`
@@ -54,10 +56,13 @@ export const ImageSerIcon = styled.img`
 export const DivSerP = styled.div`
   padding: 17px;
   margin-top: -1.5rem;
+  background: ${(props) => props.theme.pallet.main};
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 `;
 export const SerP = styled.p`
   font-weight: 500;
   font-size: 25px;
   line-height: 25px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
 `;

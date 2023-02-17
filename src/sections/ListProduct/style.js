@@ -69,3 +69,6 @@ export const DivImgIcons = styled(DivImgIcon)`
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 `;
+export const DivSubscribs = styled.div`
+  margin-top: -2.5rem;
+`;

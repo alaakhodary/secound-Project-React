@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivBox = styled.div`
   width: 387px;
   height: 561px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   box-shadow: 0px 3px 10px rgba(32, 32, 32, 0.1);
   border-radius: 6px;
   position: absolute;
@@ -11,15 +11,17 @@ export const DivBox = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
+  border: 1px solid ${(props) => props.theme.pallet.border.b1};
 `;
 export const Heading = styled.h1`
   margin-bottom: 1rem;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const Label = styled.label`
   font-size: 18px;
   line-height: 19px;
   letter-spacing: -0.2px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
   font-weight: 500;
 `;
 export const DivUserName = styled.div`
@@ -62,7 +64,7 @@ export const Remember = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
   margin-bottom: 1.3rem;
 `;
 export const LogIn = styled(Input)`
@@ -82,10 +84,12 @@ export const Or = styled.p`
   left: 9rem;
   bottom: -5px;
   z-index: 1;
-  background-color: white;
-  border-left: 15px solid white;
-  border-right: 15px solid white;
-  color: #a9acb0;
+  background-color: ${(props) => props.theme.pallet.main};
+  /* border-left: 15px solid white;
+  border-right: 15px solid white; */
+  padding-left: 15px;
+  padding-right: 15px;
+  color: ${(props) => props.theme.pallet.secondary};
   font-size: 14px;
 `;
 export const DivGoogle = styled.div`
@@ -132,7 +136,7 @@ export const RigesterAccount = styled.div`
   font-weight: 500;
   font-size: 16px;
   justify-content: center;
-  color: #606060;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const RigesterNow = styled.span`
   margin-left: 0.3rem;

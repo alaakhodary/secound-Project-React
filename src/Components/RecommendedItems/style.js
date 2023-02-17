@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivRecommended = styled.div`
   width: 220px;
   height: 325px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   margin-top: 1.5rem;
@@ -23,7 +23,7 @@ export const DivRecoPrice = styled.p`
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
   margin-left: 1rem;
   margin-top: 2rem;
 `;
@@ -32,7 +32,7 @@ export const DivRecoDesc = styled.p`
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #8b96a5;
+  color: ${(props) => props.theme.pallet.secondary};
   margin-left: 1rem;
   margin-top: 0.6rem;
 `;

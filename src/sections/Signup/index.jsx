@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../Components/Footer";
 
+import ToggleButton from "../../Components/ToggleButton";
+
 import { InputCheck, Label } from "../Login/style";
 import {
   Agree,
@@ -37,6 +39,9 @@ const Signup = () => {
   };
   return (
     <>
+      <div style={{ margin: "2rem" }}>
+        <ToggleButton />
+      </div>
       <DivBoxs>
         <Headings>Register</Headings>
         <form>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivAllFooter = styled.div`
   height: 324px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   position: relative;
 `;
 export const Divlogo = styled.div`
@@ -17,7 +17,7 @@ export const PLogo = styled.p`
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #505050;
+  color: ${(props) => props.theme.pallet.secondary};
   width: 270px;
   margin-top: 1rem;
 `;
@@ -36,12 +36,12 @@ export const PItem = styled.p`
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #8b96a5;
+  color: ${(props) => props.theme.pallet.textFooter};
 `;
 export const DivFinalFooter = styled.div`
   display: flex;
   gap: 74.2rem;
-  background: #eff2f4;
+  background: ${(props) => props.theme.pallet.main};
   border-top: 1px solid #e3e8ee;
   height: 68px;
   align-items: center;
@@ -51,10 +51,17 @@ export const DivFinalFooter = styled.div`
   bottom: 0;
   left: 0;
 `;
+export const Pecommerce = styled.p`
+  color: ${(props) => props.theme.pallet.secondary};
+`;
 export const SelectLang = styled.select`
-  background: #eff2f4;
+  background: ${(props) => props.theme.pallet.main};
   border: none;
   font-size: 18px;
-  color: #606060;
+  color: ${(props) => props.theme.pallet.secondary};
   outline: none;
+  padding: 10px;
+`;
+export const HeadingMainTitle = styled.h3`
+  color: ${(props) => props.theme.pallet.secondary};
 `;

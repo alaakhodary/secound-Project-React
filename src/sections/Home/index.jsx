@@ -1,4 +1,4 @@
-import React /* useState */ from "react";
+import React from "react";
 
 import imgHeadPhone from "../../asset/banner.png";
 import UserImg from "../../asset/User.png";
@@ -73,6 +73,8 @@ import {
   InputNumQ,
   SelectQ,
   InputSubmitQ,
+  HeadingEService,
+  HeadingSuppliers,
 } from "./style";
 import Products from "../../Components/Products";
 import RecommendedItems from "../../Components/RecommendedItems";
@@ -80,17 +82,9 @@ import ExtraServices from "../../Components/ExtraServices";
 import Region from "../../Components/Region";
 import Subscribe from "../../Components/Subscribe";
 import LastFooter from "../../Components/LastFooter";
-// import { lightTheme } from "../../global/theme.js";
-// context
-/* import { themeContext } from "../../context/themeContext";
-import { ThemeProvider } from "styled-components"; */
 
 const Home = () => {
-  /*  const [theme, setTheme] = useState(lightTheme); */
-
   return (
-    /*  <ThemeProvider theme={theme}>
-      <themeContext.Provider value={[theme, setTheme]}> */
     <div>
       <Header />
       <Navbar />
@@ -415,7 +409,7 @@ const Home = () => {
           </DivRecomgrid>
         </DivRecommended>
         <ExtraService>
-          <h1>Our extra services</h1>
+          <HeadingEService>Our extra services</HeadingEService>
           <ExtraServiceFlex>
             <ExtraServices
               img1={services}
@@ -444,7 +438,7 @@ const Home = () => {
             />
           </ExtraServiceFlex>
         </ExtraService>
-        <h1>Suppliers by region</h1>
+        <HeadingSuppliers>Suppliers by region</HeadingSuppliers>
         <div>
           <DivFlagFlex>
             <Region
@@ -530,8 +524,6 @@ const Home = () => {
       ></Subscribe>
       <LastFooter />
     </div>
-    //  </themeContext.Provider>
-    // </ThemeProvider>
   );
 };
 

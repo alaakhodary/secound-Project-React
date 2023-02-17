@@ -17,6 +17,8 @@ import {
   DivlogoFlex,
   DivlogoGrid,
   DivlogoSoial,
+  HeadingMainTitle,
+  Pecommerce,
   PItem,
   PLogo,
   SelectLang,
@@ -41,7 +43,7 @@ const LastFooter = () => {
         </Divlogo>
 
         <DivlogoGrid>
-          <h3>About</h3>
+          <HeadingMainTitle>About</HeadingMainTitle>
           <PItem>About Us</PItem>
           <PItem>About Us</PItem>
           <PItem>About Us</PItem>
@@ -49,7 +51,7 @@ const LastFooter = () => {
         </DivlogoGrid>
 
         <DivlogoGrid>
-          <h3>Partnership</h3>
+          <HeadingMainTitle>Partnership</HeadingMainTitle>
           <PItem>About Us</PItem>
           <PItem>Register</PItem>
           <PItem>About Us</PItem>
@@ -57,7 +59,7 @@ const LastFooter = () => {
         </DivlogoGrid>
 
         <DivlogoGrid>
-          <h3>Information</h3>
+          <HeadingMainTitle>Information</HeadingMainTitle>
           <PItem>Find store</PItem>
           <PItem>About Us</PItem>
           <PItem>About Us</PItem>
@@ -65,7 +67,7 @@ const LastFooter = () => {
         </DivlogoGrid>
 
         <DivlogoGrid>
-          <h3>For users</h3>
+          <HeadingMainTitle>For users</HeadingMainTitle>
           <PItem>About Us</PItem>
           <PItem>Find store</PItem>
           <PItem>Find store</PItem>
@@ -73,13 +75,13 @@ const LastFooter = () => {
         </DivlogoGrid>
 
         <DivlogoGrid>
-          <h3>Get app</h3>
+          <HeadingMainTitle>Get app</HeadingMainTitle>
           <img src={appStore} alt="appStore" />
           <img src={googleStore} alt="googleStore" />
         </DivlogoGrid>
       </DivlogoFlex>
       <DivFinalFooter>
-        <p>© 2023 Ecommerce. </p>
+        <Pecommerce>© 2023 Ecommerce. </Pecommerce>
         <SelectLang id="Lang">
           <option value="English">English</option>
           <option value="Arabic">Arabic</option>

@@ -5,14 +5,16 @@ import chats from "../../asset/chat.png";
 import orders from "../../asset/love.png";
 import carts from "../../asset/cart.png";
 import { DivAllMenu, DivCarts, DivChat, DivOrder, DivPerson } from "./style";
-
-// import ToggleButton from "../../Components/ToggleButton";
+import ToggleButton from "../ToggleButton";
+import { NavLink } from "react-router-dom";
 
 const MenuPage = () => {
   return (
     <DivAllMenu>
       <DivPerson>
-        <img src={persons} alt="persons" />
+        <NavLink to="/home">
+          <img src={persons} alt="persons" />
+        </NavLink>
         <p>Profile</p>
       </DivPerson>
       <DivChat>
@@ -24,10 +26,12 @@ const MenuPage = () => {
         <p>Orders</p>
       </DivOrder>
       <DivCarts>
-        <img src={carts} alt="carts" />
+        <NavLink to="/carts">
+          <img src={carts} alt="carts" />
+        </NavLink>
         <p>My cart</p>
       </DivCarts>
-      {/* <ToggleButton /> */}
+      <ToggleButton />
     </DivAllMenu>
   );
 };

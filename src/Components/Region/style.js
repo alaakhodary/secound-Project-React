@@ -12,15 +12,16 @@ export const Flagimg = styled.img`
   height: 20px;
 `;
 export const DivFlagP = styled.div``;
+
 export const FlagP = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const FlagSubP = styled.p`
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  color: #8b96a5;
+  color: ${(props) => props.theme.pallet.secondary};
 `;

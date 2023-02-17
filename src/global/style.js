@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -9,7 +9,22 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   height: 100vh;
-  background: #F7F7F7;
+  background:${(props) => props.theme.pallet.page};
   font-family: 'Inter', 'sans-serif';
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #8b96a5;
+}
+`;
+export const Flex = styled.div`
+  display: flex;
+  align-items: ${(props) => props.align};
+  gap: ${(props) => props.gap + "px"};
+  justify-content: ${(props) => props.justify};
+  flex-wrap: ${(props) => props.wrap};
+  flex-direction: ${(props) => props.direction};
 `;

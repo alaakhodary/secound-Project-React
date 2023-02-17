@@ -6,4 +6,5 @@ export const DivHeader = styled.div`
   padding: 1% 6%;
   display: flex;
   align-items: center;
+  background-color: ${(props) => props.theme.pallet.main};
 `;

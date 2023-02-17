@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  DivImgF,
   DivSubscribe,
   DivSubscribeFlex,
   DivSubscribeImgemail,
@@ -20,7 +21,9 @@ const Subscribe = ({ title, subTitle, emailImg }) => {
       <form>
         <DivSubscribeFlex>
           <div>
-            <DivSubscribeImgemail src={emailImg} alt="emailImgs" />
+            <DivImgF>
+              <DivSubscribeImgemail src={emailImg} alt="emailImgs" />
+            </DivImgF>
             <DivSubscribeInput type="email" id="email" placeholder="Email" />
           </div>
           <DivSubscribeInSubmit type="submit" value="Subscribe" />

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivContent = styled.div`
   height: 450px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   border: 1px solid #e3e8ee;
   border-radius: 6px;
   margin-top: 20px;
@@ -30,10 +30,12 @@ export const ULListItem = styled.li`
   font-weight: 500;
   font-size: 16px;
   width: 350px;
+  border: 1px solid ${(props) => props.theme.pallet.border.b2};
 `;
 export const ULListItems = styled(ULListItem)`
-  background: white;
+  background: ${(props) => props.theme.pallet.main};
   font-weight: 400;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const DivImg = styled.div`
   padding: 20px;
@@ -74,15 +76,16 @@ export const DivSupplierPa = styled(DivSupplierP)`
 `;
 export const DivOffers = styled.div`
   height: 240px;
-  border: 1px solid #e3e8ee;
+  border: 1px solid ${(props) => props.theme.pallet.border.b1};
   border-radius: 6px;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   margin-top: 1rem;
   border-right: none;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const DivDeals = styled.div`
   padding: 20px;
-  border-right: 1px solid #e3e8ee;
+  border-right: 1px solid ${(props) => props.theme.pallet.border.b1};
   width: 281px;
   height: 238px;
 `;
@@ -155,12 +158,13 @@ export const ButtonHome = styled.button`
   right: 81.25%;
   top: 62rem;
   bottom: 72.5%;
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   border: 1px solid #ffffff;
   box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
   border-radius: 6px;
   font-size: 15px;
   font-weight: 600;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const ButtonHomes = styled(ButtonHome)`
   left: 6.99%;
@@ -237,7 +241,7 @@ export const HeadingReq = styled.h1`
   font-size: 32px;
   line-height: 39px;
   letter-spacing: -0.2px;
-  color: #ffffff;
+  color: ${(props) => props.theme.pallet.main};
   width: 28rem;
   margin-top: 3rem;
   margin-left: 4rem;
@@ -247,18 +251,19 @@ export const PHeadingReq = styled.p`
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #ffffff;
+  color: ${(props) => props.theme.pallet.main};
   margin-left: 4rem;
   margin-top: 1rem;
   width: 25rem;
 `;
 export const DivFormQ = styled.div`
-  background: #ffffff;
+  background: ${(props) => props.theme.pallet.main};
   box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.25);
   border-radius: 6px;
   width: 491px;
   height: 371px;
   margin-top: 2rem;
+  border: 1px solid ${(props) => props.theme.pallet.border.b1};
 `;
 export const DivFormQFlex = styled.div`
   display: flex;
@@ -272,7 +277,7 @@ export const HFormQ = styled.h2`
   font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.2px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const InputQ = styled.input`
   background: #ffffff;
@@ -346,4 +351,10 @@ export const InputSubmitQ = styled.input`
   color: white;
   font-family: "Inter";
   cursor: pointer;
+`;
+export const HeadingEService = styled.h1`
+  color: ${(props) => props.theme.pallet.secondary};
+`;
+export const HeadingSuppliers = styled.h1`
+  color: ${(props) => props.theme.pallet.secondary};
 `;

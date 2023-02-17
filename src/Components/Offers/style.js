@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const DivWatch = styled.div`
-  background: #ffffff;
+  /*   background: #ffffff; */
   height: 240px;
   margin-top: 1rem;
   width: 278.5px;
-  border: 1px solid #e3e8ee;
+  /*   border: 1px solid #e3e8ee; */
   padding: 10px;
+  color: ${(props) => props.theme.pallet.secondary};
+  background: ${(props) => props.theme.pallet.main};
+  border: 1px solid ${(props) => props.theme.pallet.border.b1};
 `;
 export const Img = styled.img`
   max-width: 100%;
@@ -25,7 +28,7 @@ export const DivP = styled.p`
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.2px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const DivSubP = styled.p`
   width: 61px;

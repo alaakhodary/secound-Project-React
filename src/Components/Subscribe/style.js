@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const DivSubscribe = styled.div`
-  background: #e9e9e9;
+  background: ${(props) => props.theme.pallet.background};
   height: 190px;
   margin-top: 3.5rem;
+  border-bottom: 1px solid ${(props) => props.theme.pallet.border.b2};
+  border-top: 1px solid ${(props) => props.theme.pallet.border.b2};
 `;
 export const DivSubscribeTitle = styled.div`
   padding: 1rem;
@@ -14,7 +16,7 @@ export const HeadingSubscribe = styled.h1`
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.2px;
-  color: #1c1c1c;
+  color: ${(props) => props.theme.pallet.secondary};
   margin-top: 2rem;
 `;
 export const PSubscribe = styled.p`
@@ -23,7 +25,7 @@ export const PSubscribe = styled.p`
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.2px;
-  color: #606060;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const DivSubscribeFlex = styled.div`
   display: flex;
@@ -59,6 +61,12 @@ export const DivSubscribeImgemail = styled.img`
   height: 15px;
   position: absolute;
   z-index: 5;
-  left: 48rem;
-  top: 212.6rem;
+`;
+export const DivImgF = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
 `;

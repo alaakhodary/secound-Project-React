@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivAllMenu = styled.div`
   display: flex;
-  margin-left: 16rem;
+  margin-left: 11rem;
   gap: 2rem;
   align-items: center;
 `;

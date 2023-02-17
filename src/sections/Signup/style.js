@@ -9,6 +9,7 @@ export const Headings = styled.h1`
   margin-bottom: 1rem;
   font-weight: 600;
   font-size: 24px;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const Divall = styled.div`
   display: flex;
@@ -69,6 +70,7 @@ export const Agree = styled.div`
 `;
 export const PAgree = styled.p`
   margin-left: 10px;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const SpanAgree = styled.span`
   color: #0d6efd;
@@ -86,7 +88,7 @@ export const SpanLogin = styled(SpanAgree)`
   cursor: pointer;
 `;
 export const PHaveAnAccount = styled.p`
-  color: #606060;
+  color: ${(props) => props.theme.pallet.secondary};
 `;
 export const Divfhone = styled.div`
   display: block;
