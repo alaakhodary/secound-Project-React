@@ -76,6 +76,7 @@ import {
   HeadingEService,
   HeadingSuppliers,
 } from "./style";
+
 import Products from "../../Components/Products";
 import RecommendedItems from "../../Components/RecommendedItems";
 import ExtraServices from "../../Components/ExtraServices";
@@ -83,7 +84,7 @@ import Region from "../../Components/Region";
 import Subscribe from "../../Components/Subscribe";
 import LastFooter from "../../Components/LastFooter";
 
-const Home = () => {
+const MainPage = () => {
   return (
     <div>
       <Header />
@@ -527,4 +528,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MainPage;
