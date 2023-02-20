@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const DivBox = styled.div`
   width: 387px;
-  height: 561px;
   background: ${(props) => props.theme.pallet.main};
   box-shadow: 0px 3px 10px rgba(32, 32, 32, 0.1);
   border-radius: 6px;
@@ -37,6 +36,7 @@ export const Input = styled.input`
   margin-bottom: 1rem;
   background: #ffffff;
   padding-left: 10px;
+  display: block;
 `;
 export const DivPassword = styled.div`
   display: flex;
@@ -95,6 +95,7 @@ export const Or = styled.p`
 export const DivGoogle = styled.div`
   display: flex;
   margin-top: 2rem;
+  position: relative;
 `;
 export const Buttongoogle = styled.button`
   width: 327px;
@@ -108,7 +109,6 @@ export const Buttongoogle = styled.button`
   line-height: 19px;
   text-align: center;
   color: #606060;
-  position: relative;
   margin-bottom: 0.7rem;
   cursor: pointer;
 `;
@@ -116,8 +116,8 @@ export const Imagegoogle = styled.img`
   position: absolute;
   width: 22px;
   height: 22px;
-  left: 2.5rem;
-  top: 25.7rem;
+  left: 16px;
+  top: 11px;
   z-index: 12;
 `;
 export const DivFacebook = styled(DivGoogle)`
@@ -127,10 +127,7 @@ export const Buttonface = styled(Buttongoogle)`
   background: #4267b2;
   color: white;
 `;
-export const Imageface = styled(Imagegoogle)`
-  left: 2.5rem;
-  top: 29.3rem;
-`;
+export const Imageface = styled(Imagegoogle)``;
 export const RigesterAccount = styled.div`
   display: flex;
   font-weight: 500;
@@ -143,4 +140,12 @@ export const RigesterNow = styled.span`
   color: #0d6efd;
   font-weight: 600;
   cursor: pointer;
+`;
+export const ErrorsList = styled.ul`
+  list-style: circle;
+  padding: 10px;
+`;
+export const ErrorMessage = styled.li`
+  margin-top: 5px;
+  color: red;
 `;

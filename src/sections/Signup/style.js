@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { DivBox } from "../Login/style";
 
-export const DivBoxs = styled(DivBox)`
-  height: 635px;
-`;
+export const DivBoxs = styled(DivBox)``;
 
 export const Headings = styled.h1`
   margin-bottom: 1rem;
