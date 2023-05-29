@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const useAuthorization = (url) => {
   const [isLoading, setIsLoading] = useState(false);
-  const [isAuthorized, setisAuthorized] = useState(false);
+  const [isAuthorized, setisAuthorized] = useState(true);
   const [Errors, setErrors] = useState([]);
   const [token, setToken] = useState("");
   const [username, setusername] = useState("");
